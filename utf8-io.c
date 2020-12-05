@@ -58,7 +58,7 @@ size_t read_utf8(io_stream_t stream)
     {
         fread(stream->buff + i, 1, sizeof(char), stream->istream);
         if (!is_russian(stream->buff + i))
-            return read_size + i - INPUT_SIZE;
+            return read_size + i - INPUT_SIZE + 1;
     }
 
     return BUFF_SIZE;
