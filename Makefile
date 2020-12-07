@@ -1,4 +1,4 @@
-all:main	$
+all:main $
 
 main:main.o parser.o utf8-rus.o utf8-io.o
 	gcc main.o parser.o utf8-rus.o utf8-io.o -o main $
