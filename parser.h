@@ -20,6 +20,15 @@
 size_t contains_vowel(char* u8_str, size_t word_size);
 
 /**
+ * @brief           Copy UTF-8 string of specified length to dst_buff
+ * @param u8_str    String to copy
+ * @param word_size Length of string
+ * @param dst_buff  Destination buffer
+ * @return          Number of copied symbols
+ */
+size_t copy_word(char* u8_str, size_t word_size, char* dst_buff);
+
+/**
  * @brief           Write word from u8_str to dst_buff with hyphens
  * @param w         Word string
  * @param word_size Length of word
